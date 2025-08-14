@@ -1,0 +1,41 @@
+/********** 鼠标 **********/
+/* 默认鼠标样式 */
+body, html {
+  cursor: url('./mouse/MyMouse_01.cur'), auto;
+}
+
+
+/********** 日间背景透明度 **********/
+/* 文章页背景 */
+.layout_post>#post {
+    background: rgba(255, 255, 255, .7);
+}
+/* 所有页面背景 */
+#aside_content .card-widget,
+#recent-posts>.recent-post-item,
+.layout_page>div:first-child:not(.recent-posts),
+.layout_post>#page,
+.layout_post>#post,
+.read-mode .layout_post>#post {
+    background: rgba(255, 255, 255, .7);
+}
+
+/*侧边卡片的透明度 */
+:root {
+    --card-bg: rgba(255, 255, 255, .7);
+}
+
+/* 页脚透明 */
+#footer {
+    background: rgba(255, 255, 255, .1);
+}
+
+
+/********** 夜间模式全局调整 **********/
+[data-theme="dark"] {
+    --card-bg: rgba(255, 255, 255, 0.1);
+}
+
+
+
+
